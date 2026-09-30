@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBlog - Create Blog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            My<span>Blog</span>
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="blogs.html">Blogs</a>
+
+            <a href="#">Categories</a>
+
+            <a href="create-blog.html" class="active">
+                Create Blog
+            </a>
+
+            <a href="#">About</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="create-header">
+
+        <p>SHARE YOUR STORY</p>
+
+        <h1>Create a New Blog</h1>
+
+        <p>
+            Write your thoughts, ideas and experiences
+            and share them with others.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= CREATE BLOG FORM ================= -->
+
+    <section class="create-section">
+
+
+        <form id="blogForm">
+
+
+            <!-- Blog Title -->
+
+            <div class="form-group">
+
+                <label for="blogTitle">
+                    Blog Title
+                </label>
+
+                <input
+                    type="text"
+                    id="blogTitle"
+                    placeholder="Enter your blog title"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- Author -->
+
+            <div class="form-group">
+
+                <label for="blogAuthor">
+                    Author Name
+                </label>
+
+                <input
+                    type="text"
+                    id="blogAuthor"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- Category -->
+
+            <div class="form-group">
+
+                <label for="blogCategory">
+                    Category
+                </label>
+
+                <select id="blogCategory" required>
+
+                    <option value="">
+                        Select Category
+                    </option>
+
+                    <option value="Technology">
+                        Technology
+                    </option>
+
+                    <option value="Travel">
+                        Travel
+                    </option>
+
+                    <option value="Education">
+                        Education
+                    </option>
+
+                    <option value="Lifestyle">
+                        Lifestyle
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- Image URL -->
+
+            <div class="form-group">
+
+                <label for="blogImage">
+                    Image URL
+                </label>
+
+                <input
+                    type="url"
+                    id="blogImage"
+                    placeholder="https://example.com/image.jpg"
+                >
+
+                <small>
+                    Optional — you can add an image URL.
+                </small>
+
+            </div>
+
+
+
+            <!-- Blog Content -->
+
+            <div class="form-group">
+
+                <label for="blogContent">
+                    Blog Content
+                </label>
+
+                <textarea
+                    id="blogContent"
+                    rows="10"
+                    placeholder="Write your blog here..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- Submit -->
+
+            <button
+                type="submit"
+                class="publish-btn"
+            >
+                Publish Blog
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>MyBlog</h3>
+
+        <p>
+            Read. Write. Share. Inspire.
+        </p>
+
+        <p class="copyright">
+            © 2026 MyBlog. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
